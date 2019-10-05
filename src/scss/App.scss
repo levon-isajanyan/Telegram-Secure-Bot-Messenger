@@ -1,0 +1,61 @@
+@import './main_component/_variables';
+@import './main_component/_mixins';
+
+// Form shapes
+.form {
+    @include border-color(1px, solid, $green);
+    @include border-radius(15px);
+    @include padding(1em, 1em, 1em, 1em)
+}
+
+// Html properties
+html, body {
+    background-color: $white;
+    font-family: 'Roboto', sans-serif;
+}
+
+// Warning text for input
+.warning-text {
+    color: $red;
+}
+
+// Input label
+.form-label {
+    @include textBigSize();
+}
+
+.form-control:focus {
+    @include border-color(1px, solid, $black)
+}
+
+.form-control-fil:focus {
+    border-color: none;
+}
+
+.warning-input {
+    @include border-color(1px, solid, $red)
+}
+
+.appWrapper > .container  {
+    @include padding(1em, 1em, 1em, 1em);
+}
+
+.appWrapper > .container > h1 {
+    color: $black
+}
+
+.introtext {
+    @include textGiantSize();
+    @include padding(1em, 1em, 1em, 1em);
+}
+
+.btn {
+    background-color: $green;
+    @include border-color(1px, solid, transparent)
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    background-color: $black !important;
+    @include border-color(1px, solid, transparent);
+    box-shadow: none !important;
+}

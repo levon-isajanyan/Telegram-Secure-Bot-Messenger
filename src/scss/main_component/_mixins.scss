@@ -1,0 +1,38 @@
+// Border color
+@mixin border-color($width, $border-style, $border-color) {
+    border-width: $width;
+    border-style: $border-style;
+    border-color: $border-color;
+}
+
+// Border - radius
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+//  Padding
+@mixin padding($left, $right, $top, $bottom) {
+    padding-left: $left;
+    padding-right: $right;
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+// Normal text
+@mixin textNormalSize() {
+    font-size: 12px;
+}
+
+// Big text
+@mixin textBigSize() {
+    font-size: 16px;
+}
+
+//  Huge text
+@mixin textGiantSize() {
+    font-size: 20px;
+}
